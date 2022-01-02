@@ -1,4 +1,8 @@
 # Getting Started with Bestest Chrome Extension
+## Prerequisites
+- Make sure you have [Node.js](https://nodejs.org/en/) installed
+- After cloning this repo run `npm install`
+
 
 ## How to build the extension
 First run `npm run build`
