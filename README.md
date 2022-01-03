@@ -24,3 +24,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+## Contributing
+
+- Create an issue on the project board
+- Branch off main and name the branch `BCE-[issue number]` ( ex `BCE-7-create-goals-ui`)
+- When making a PR, make sure the PR title starts with `Issue [issue number]` (ex Issue 7 create goals ui)
+- Follow instructions in PR template
+- Need at least one approval to merge
