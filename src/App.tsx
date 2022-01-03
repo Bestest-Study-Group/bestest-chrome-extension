@@ -5,6 +5,7 @@ import './App.css';
 
 function App() {
 	const [redditCount, updateRedditCount] = useState(0)
+	/*
 	const tabLogger = async (activeInfo: chrome.tabs.TabActiveInfo) => {
 		if (activeInfo?.tabId) {
 			let tab = await chrome.tabs.get(activeInfo.tabId)
@@ -18,8 +19,8 @@ function App() {
 	}
 	useEffect(() => {
 		chrome.tabs.onActivated.addListener(tabLogger)
-
 	})
+	*/
 	return (
 		<div className="App">
 			<header className="App-header">
