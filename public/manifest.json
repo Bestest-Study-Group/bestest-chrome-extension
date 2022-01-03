@@ -18,7 +18,8 @@
     },
     "permissions": [
         "activeTab",
-        "tabs"
+        "tabs",
+        "storage"
     ],
     "start_url": ".",
     "display": "standalone",
