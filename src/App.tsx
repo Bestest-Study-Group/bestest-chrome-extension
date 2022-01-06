@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react'
 import Card from './templateComponents/Card'
 import CardRow from './templateComponents/CardRow';
+import TimeDisplay from './templateComponents/TimeDisplay';
 
 function App() {
 
@@ -15,9 +16,7 @@ function App() {
 	}
 	return (
 		<div className="bg-slate-400 h-screen">
-			<div>
-				<h1 className="text-3xl font-bold underline">This is Tailwind CSS</h1>
-			</div>
+			<TimeDisplay/>
 			<CardRow>
 				{cards}
 			</CardRow>
