@@ -38,6 +38,7 @@ function App() {
 				</a>
 				<div>
 					<h1> You visited Reddit {redditCount} times</h1>
+					<h1 className="text-3xl font-bold underline">This is Tailwind CSS</h1>
 				</div>
 			</header>
 
