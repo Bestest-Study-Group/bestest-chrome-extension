@@ -6,7 +6,7 @@ import CardRow from './templateComponents/CardRow';
 function App() {
 
 	let cards = []
-	for(let i = 0; i < 5; i++){
+	for(let i = 0; i < 10; i++){
 		cards.push(
 			<Card>
 				<h1>Hi from card</h1>
