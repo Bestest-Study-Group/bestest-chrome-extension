@@ -19,7 +19,8 @@
     "permissions": [
         "activeTab",
         "tabs",
-        "storage"
+        "storage",
+        "topSites"
     ],
     "start_url": ".",
     "display": "standalone",
