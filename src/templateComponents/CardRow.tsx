@@ -1,22 +1,38 @@
 import React, { ReactElement, useEffect, useRef, useState } from "react";
 
-function CardRow(props:any){
-   
+function CardRow(props: any) {
+
     const ref = useRef<any>(null)
 
-    const scroll = (scrollOffset:number) => {
-        if(ref && ref.current){
-            ref.current.scrollLeft += scrollOffset;
+    const scroll = (scroll: number) => {
+        if (ref && ref.current) {
+            let totalScroll = 0
+            let scrollAmount = scroll / 20
+            let slideTimer = setInterval(function () {
+                ref.current.scrollLeft += scrollAmount;
+                totalScroll += scrollAmount;
+                if (Math.abs(totalScroll) >= Math.abs(scroll)) {
+                    window.clearInterval(slideTimer);
+                }
+            }, 25);
         }
-        
-      };
-    return(
+
+    };
+    return (
         <div>
             <div className="grid grid-rows-1 grid-flow-col px-20 py-4 gap-10 overflow-x-hidden" ref={ref}>
                 {props.children}
             </div>
-            <button onClick={()=>scroll(-200)}>left</button>
-            <button onClick={()=>scroll(200)}>Right</button>
+            <button
+                className="bg-white w-20 h-20 rounded-full shadow-md "
+                onClick={() => scroll(-600)}>
+                left
+            </button>
+            <button
+                className="bg-white w-20 h-20 rounded-full shadow-md"
+                onClick={() => scroll(600)}>
+                right
+            </button>
 
         </div>
     )
