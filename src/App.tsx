@@ -1,14 +1,14 @@
 import React from 'react';
 import { useEffect, useState } from 'react'
-import Card from './templateComponents/Card'
-import CardRow from './templateComponents/CardRow';
+import TopSites from './components/TopSites';
+import DummyCards from './components/DummyCards'
 import TimeDisplay from './templateComponents/TimeDisplay';
 
 function App() {
 	return (
 		<div className="bg-slate-400 h-screen">
 			<TimeDisplay/>
-			<CardRow></CardRow>
+			<DummyCards/>
 		</div>
 	);
 }
