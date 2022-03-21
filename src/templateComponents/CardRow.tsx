@@ -19,18 +19,19 @@ function CardRow(props: any) {
 
     };
     return (
-        <div>
-            <div className="grid grid-rows-1 grid-flow-col px-20 py-4 gap-10 overflow-x-hidden" ref={ref}>
+        <div className="h-64">
+            <div className="h-full grid grid-rows-1 grid-flow-col px-20 py-4 gap-10 overflow-x-hidden" ref={ref}>
                 {props.children}
             </div>
             <button
-                className="bg-white w-20 h-20 rounded-full shadow-md "
+                className="bg-white w-20 h-20 rounded-full shadow-md relative bottom-2/3 ml-2"
                 onClick={() => scroll(-600)}>
                 left
             </button>
             <button
-                className="bg-white w-20 h-20 rounded-full shadow-md"
-                onClick={() => scroll(600)}>
+                className="bg-white w-20 h-20 rounded-full shadow-md relative bottom-2/3 float-right mr-2"
+                onClick={() => scroll(600)}
+                >
                 right
             </button>
 

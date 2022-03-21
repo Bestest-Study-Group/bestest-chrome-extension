@@ -8,7 +8,8 @@ function App() {
 	return (
 		<div className="bg-slate-400 h-screen scroll-smooth">
 			<TimeDisplay/>
-			<DummyCards/>
+			{/* <DummyCards/> */}
+			<TopSites/>
 		</div>
 	);
 }
