@@ -7,13 +7,13 @@ function TopSites(props: any) {
 
     function OutputTopSites(topSites: chrome.topSites.MostVisitedURL[]) {
         topSites.forEach((site: chrome.topSites.MostVisitedURL) => {
-            setTopSiteLinks(prev => [...prev,(
-                <a href={site.url}> 
+            setTopSiteLinks(prev => [...prev, 
+                <a href={site.url}>
                     <Card>
-                        {site.title}
+                        <p>{site.title}</p>
                     </Card>
                 </a>
-            )])
+            ])
             console.log(topSiteLinks);
         })
     }
