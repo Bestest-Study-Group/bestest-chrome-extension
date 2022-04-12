@@ -6,7 +6,7 @@ import TimeDisplay from './templateComponents/TimeDisplay';
 
 function App() {
 	return (
-		<div className="bg-slate-400 h-screen scroll-smooth">
+		<div className="bg-stone-800 h-screen scroll-smooth">
 			<TimeDisplay/>
 			{/* <DummyCards/> */}
 			<TopSites/>

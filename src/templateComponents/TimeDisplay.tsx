@@ -25,7 +25,7 @@ function TimeDisplay(props:any){
 
     return(
         <div className="flex w-100 justify-center py-10">
-            <div className="bg-rose-700 rounded-lg w-1/3 h-60 text-center py-10">
+            <div className="bg-rose-800 rounded-lg w-1/3 h-60 text-center py-10">
                 <h1 id='time' className="text-5xl text-white"></h1>
                 <h1 className="text-3xl text-white">{days[date.getDay()] + ", " + month[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear()}</h1>
                 <h1 className="text-2xl text-white">Good Evening!</h1>

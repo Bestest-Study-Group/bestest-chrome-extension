@@ -24,15 +24,19 @@ function CardRow(props: any) {
                 {props.children}
             </div>
             <button
-                className="bg-white w-20 h-20 rounded-full shadow-md relative bottom-2/3 ml-2"
+                className="bg-white w-20 h-20 rounded-full shadow-md relative bottom-2/3 ml-2 float-left flex justify-center items-center"
                 onClick={() => scroll(-600)}>
-                left
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
             </button>
             <button
-                className="bg-white w-20 h-20 rounded-full shadow-md relative bottom-2/3 float-right mr-2"
+                className="bg-white w-20 h-20 rounded-full shadow-md relative bottom-2/3 float-right mr-2 flex justify-center items-center"
                 onClick={() => scroll(600)}
                 >
-                right
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
             </button>
 
         </div>
