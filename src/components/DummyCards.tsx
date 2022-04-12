@@ -1,6 +1,6 @@
 import React, { ReactElement, useEffect, useState } from 'react'
 import CardRow from '../templateComponents/CardRow'
-import Card from '../templateComponents/Card'
+import Card from '../templateComponents/Card/Card'
 
 function DummyCards() {
     const [cards, setCards] = useState(new Array<ReactElement>())
