@@ -38,10 +38,13 @@ function TopSites(props: any) {
     }
 
     useEffect(() => {
-        // if (chrome.topSites !== undefined) {
-        //     chrome.topSites.get(OutputTopSites);
-        // }
-        OutputTopSites(topSitesMock)
+        if (chrome.topSites !== undefined) {
+            chrome.topSites.get(OutputTopSites);
+        }
+        else{
+            OutputTopSites(topSitesMock);
+        }
+       
         
     }, [])
 
