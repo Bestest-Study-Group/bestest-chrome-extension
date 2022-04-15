@@ -1,5 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faChevronLeft, faChevronRight} from "@fortawesome/free-solid-svg-icons"
 import React, { ReactElement, useEffect, useRef, useState } from "react";
-
 function CardRow(props: any) {
 
     const ref = useRef<any>(null)
@@ -19,20 +20,20 @@ function CardRow(props: any) {
 
     };
     return (
-        <div className="h-64">
-            <div className="h-full grid grid-rows-1 grid-flow-col px-20 py-4 gap-10 overflow-x-hidden" ref={ref}>
+        <div className="h-80">
+            <div className="h-full grid grid-rows-1 grid-flow-col px-20 py-4 gap-8 overflow-x-hidden" ref={ref}>
                 {props.children}
             </div>
             <button
-                className="bg-white w-20 h-20 rounded-full shadow-md relative bottom-2/3 ml-2"
+                className="bg-gray-500 w-16 h-16 rounded-full shadow-md relative bottom-2/3 ml-3 hover:scale-125 hover:ease-in duration-200"
                 onClick={() => scroll(-600)}>
-                left
+                <FontAwesomeIcon className="text-gray-100" icon={faChevronLeft} />
             </button>
             <button
-                className="bg-white w-20 h-20 rounded-full shadow-md relative bottom-2/3 float-right mr-2"
+                className="bg-gray-500 w-16 h-16 rounded-full shadow-md relative bottom-2/3 float-right mr-3 hover:scale-125 hover:ease-in duration-200"
                 onClick={() => scroll(600)}
                 >
-                right
+                <FontAwesomeIcon className="text-gray-100" icon={faChevronRight} />
             </button>
 
         </div>
